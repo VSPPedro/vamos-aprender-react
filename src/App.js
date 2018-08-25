@@ -6,7 +6,11 @@ import HelloWorld from './HelloWorld';// nosso primeiro componente React!
 
 class App extends Component {
   render() {
-    return <HelloWorld/>;
+    return <div>
+      <HelloWorld nome="Lucas"/>
+      <HelloWorld nome="Tableless"/>
+      <HelloWorld nome="Leitor"/>
+    </div>;
   }
 }
 
