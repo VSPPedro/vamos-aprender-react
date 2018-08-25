@@ -6,10 +6,9 @@ import HelloWorld from './HelloWorld';// nosso primeiro componente React!
 
 class App extends Component {
   render() {
+    const nomes = ["Lucas", "Tableless", "Leitor", "Maria", "João", "Ana"];
     return <div>
-      <HelloWorld nome="Lucas"/>
-      <HelloWorld nome="Tableless"/>
-      <HelloWorld nome="Leitor"/>
+      {nomes.map((n, i) => <HelloWorld nome={n} key={i}/>)}
     </div>;
   }
 }
